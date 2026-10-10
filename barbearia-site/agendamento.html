@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Agende seu horário online na barbearia.">
+  <title>Agendamento — Barbearia</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Início">
+        <span class="logo-icon"><i class="fa-solid fa-scissors"></i></span>
+      </a>
+      <div class="contador">
+        <span class="pulso"></span>
+        <span><span class="num">12</span> clientes na fila</span>
+      </div>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="agendamento.html" class="ativo">Agendamento</a></li>
+        <li><a href="localizacao.html">Localização</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+      <a href="agendamento.html" class="btn-cta-header">Agendar agora</a>
+      <button class="hamburger" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="drawer-overlay"></div>
+  <aside class="drawer">
+    <div class="drawer-topo">
+      <span class="logo-icon"><i class="fa-solid fa-scissors"></i></span>
+      <button class="drawer-fechar" aria-label="Fechar menu">&times;</button>
+    </div>
+    <ul class="drawer-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="servicos.html">Serviços</a></li>
+      <li><a href="agendamento.html" class="ativo">Agendamento</a></li>
+      <li><a href="localizacao.html">Localização</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+    <div class="drawer-cta"><a href="agendamento.html">Agendar agora</a></div>
+  </aside>
+
+  <section class="hero" style="min-height: 50vh; padding-top: 8rem;">
+    <div class="container hero-inner">
+      <span class="tag">Reserve seu horário</span>
+      <h1>AGENDE SEU<br><span class="titulo-destaque">HORÁRIO</span></h1>
+      <p>Escolha o serviço, a data e o horário. Confirmamos na hora pelo WhatsApp.</p>
+    </div>
+  </section>
+
+  <section class="secao secao-escura">
+    <div class="container">
+      <div class="secao-header reveal">
+        <span class="tag">Movimento</span>
+        <h2>Horários de <span class="titulo-destaque">pico</span></h2>
+        <p>Evite filas e escolha o melhor momento para sua visita.</p>
+      </div>
+
+      <div class="grid grid-4">
+        <div class="card reveal" style="border-color: rgba(0, 230, 118, 0.4);">
+          <div class="card-icone" style="background: rgba(0,230,118,0.1); border-color: rgba(0,230,118,0.3); color: #00E676;">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+          <span class="tag" style="color: #00E676; margin-top: 0.5rem; display: block;">Tranquilo</span>
+          <h3>Manhã</h3>
+          <p style="margin-bottom: 0.5rem;"><strong style="color: var(--texto);">09h — 11h</strong></p>
+          <p>Pouca fila. Ideal para quem tem pressa.</p>
+        </div>
+        <div class="card reveal" style="border-color: rgba(255, 193, 7, 0.4);">
+          <div class="card-icone" style="background: rgba(255,193,7,0.1); border-color: rgba(255,193,7,0.3); color: #FFC107;">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <span class="tag" style="color: #FFC107; margin-top: 0.5rem; display: block;">Moderado</span>
+          <h3>Meio-dia</h3>
+          <p style="margin-bottom: 0.5rem;"><strong style="color: var(--texto);">11h — 14h</strong></p>
+          <p>Movimento médio. Espere de 10 a 20 min.</p>
+        </div>
+        <div class="card reveal" style="border-color: rgba(255, 87, 34, 0.4);">
+          <div class="card-icone" style="background: rgba(255,87,34,0.1); border-color: rgba(255,87,34,0.3); color: #FF5722;">
+            <i class="fa-solid fa-fire"></i>
+          </div>
+          <span class="tag" style="color: #FF5722; margin-top: 0.5rem; display: block;">Cheio</span>
+          <h3>Tarde</h3>
+          <p style="margin-bottom: 0.5rem;"><strong style="color: var(--texto);">14h — 18h</strong></p>
+          <p>Alta procura. Recomendamos agendar.</p>
+        </div>
+        <div class="card reveal" style="border-color: rgba(255, 87, 34, 0.6);">
+          <div class="card-icone" style="background: rgba(255,87,34,0.1); border-color: rgba(255,87,34,0.4); color: #FF5722;">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+          </div>
+          <span class="tag" style="color: #FF5722; margin-top: 0.5rem; display: block;">Pico</span>
+          <h3>Sábado</h3>
+          <p style="margin-bottom: 0.5rem;"><strong style="color: var(--texto);">10h — 14h</strong></p>
+          <p>Movimento intenso. Agende com antecedência.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao">
+    <div class="container">
+      <div class="grid grid-2" style="align-items: start; gap: 3rem;">
+
+        <div class="reveal-slide">
+          <span class="tag">Formulário</span>
+          <h2>Preencha seus <span class="titulo-destaque">dados</span></h2>
+          <p style="margin-top: 1rem; margin-bottom: 2rem;">Após enviar, você receberá uma confirmação pelo WhatsApp. O agendamento é salvo localmente e será integrado ao sistema em breve.</p>
+
+          <div class="card" style="padding: 1.5rem;">
+            <h4 style="font-family: 'Inter', sans-serif; text-transform: none; letter-spacing: 0; font-size: 0.9rem; color: var(--bege); margin-bottom: 1rem;">
+              <i class="fa-solid fa-lightbulb"></i> Dica
+            </h4>
+            <p style="font-size: 0.85rem;">Chegue com 5 minutos de antecedência. Se precisar cancelar, avise com 2h de antecedência.</p>
+          </div>
+        </div>
+
+        <form id="form-agendamento" class="reveal" novalidate>
+          <div class="form-grupo">
+            <label for="nome">Nome completo <span class="obrig">*</span></label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+          </div>
+
+          <div class="form-linha">
+            <div class="form-grupo">
+              <label for="telefone">Telefone <span class="obrig">*</span></label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+            </div>
+            <div class="form-grupo">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com">
+            </div>
+          </div>
+
+          <div class="form-grupo">
+            <label for="servico">Serviço <span class="obrig">*</span></label>
+            <select id="servico" name="servico" required>
+              <option value="">Escolha um serviço</option>
+              <option value="Corte Masculino">Corte Masculino — R$ 45</option>
+              <option value="Barba Completa">Barba Completa — R$ 35</option>
+              <option value="Corte + Barba">Corte + Barba — R$ 70</option>
+              <option value="Visagismo">Visagismo — R$ 60</option>
+              <option value="Platinado">Platinado — R$ 120</option>
+              <option value="Sobrancelha">Sobrancelha — R$ 15</option>
+              <option value="Corte Infantil">Corte Infantil — R$ 35</option>
+              <option value="Hidratação">Hidratação — R$ 40</option>
+            </select>
+          </div>
+
+          <div class="form-linha">
+            <div class="form-grupo">
+              <label for="data">Data <span class="obrig">*</span></label>
+              <input type="date" id="data" name="data" required>
+            </div>
+            <div class="form-grupo">
+              <label for="hora">Horário <span class="obrig">*</span></label>
+              <select id="hora" name="hora" required>
+                <option value="">Escolha</option>
+                <option>09:00</option>
+                <option>10:00</option>
+                <option>11:00</option>
+                <option>12:00</option>
+                <option>13:00</option>
+                <option>14:00</option>
+                <option>15:00</option>
+                <option>16:00</option>
+                <option>17:00</option>
+                <option>18:00</option>
+                <option>19:00</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-grupo">
+            <label for="obs">Observações</label>
+            <textarea id="obs" name="obs" rows="3" placeholder="Alguma preferência? (opcional)"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-verde btn-bloco" style="margin-top: 0.5rem;">
+            <i class="fa-solid fa-check"></i> Confirmar agendamento
+          </button>
+
+          <div id="mensagem-sucesso" style="display: none; margin-top: 1.5rem; padding: 1.25rem; background: rgba(0, 230, 118, 0.08); border: 1px solid var(--borda-verde); border-radius: 6px;">
+            <p style="color: var(--verde); font-weight: 600; margin-bottom: 0.4rem;">
+              <i class="fa-solid fa-circle-check"></i> Agendamento confirmado!
+            </p>
+            <p style="font-size: 0.85rem; margin: 0;">Você será redirecionado para o WhatsApp para confirmar com nossa equipe.</p>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <span class="footer-logo-icon"><i class="fa-solid fa-scissors"></i></span>
+          <p>Barbearia premium com atendimento personalizado, ambiente exclusivo e profissionais especializados.</p>
+          <div class="newsletter">
+            <input type="email" placeholder="seu@email.com">
+            <button type="button"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Institucional</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="agendamento.html">Agendamento</a></li>
+            <li><a href="localizacao.html">Localização</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Serviços</h4>
+          <ul>
+            <li><a href="servicos.html">Corte Masculino</a></li>
+            <li><a href="servicos.html">Barba</a></li>
+            <li><a href="servicos.html">Visagismo</a></li>
+            <li><a href="servicos.html">Combo</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="contato.html">Fale conosco</a></li>
+            <li><a href="https://wa.me/5534999480826" target="_blank">WhatsApp</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-base">
+        <p>© 2026 Barbearia. Todos os direitos reservados.</p>
+        <p>Feito com dedicação para o homem moderno.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="whatsapp-flutuante">
+    <div class="whatsapp-msg">
+      <button class="fechar" aria-label="Fechar">×</button>
+      <p>Olá! Posso te ajudar a agendar ou falar sobre nossos serviços?</p>
+    </div>
+    <a href="https://wa.me/5534999480826?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" class="whatsapp-btn" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+      </svg>
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/contador.js"></script>
+  <script src="js/agendamento.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Círculo externo fino (bege) -->
+  <circle cx="50" cy="50" r="46" stroke="#C9B99B" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="50" cy="50" r="38" stroke="#C9B99B" stroke-width="0.8" opacity="0.25"/>
+
+  <!-- Monograma "B" estilizado (verde) -->
+  <path d="M38 28 L38 72 M38 28 L54 28 Q66 28 66 39 Q66 48 56 50 Q68 52 68 62 Q68 72 54 72 L38 72"
+        stroke="#00E676" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Linha horizontal interna do B (detalhe) -->
+  <line x1="42" y1="50" x2="56" y2="50" stroke="#00E676" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Navalha estilizada no canto inferior direito (bege) -->
+  <g transform="translate(58, 62)">
+    <rect x="0" y="0" width="22" height="8" rx="2" stroke="#C9B99B" stroke-width="1.5" fill="none"/>
+    <line x1="22" y1="4" x2="28" y2="4" stroke="#C9B99B" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="0" y1="4" x2="-4" y2="4" stroke="#C9B99B" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Ponto verde de destaque -->
+  <circle cx="72" cy="28" r="3" fill="#00E676"/>
+</svg>
